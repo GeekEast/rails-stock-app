@@ -5,7 +5,7 @@ class HomeController < ApplicationController
       begin
         @stock = StockQuote::Stock.quote(@company_code)
       rescue
-        @err_msg = "Stock code doesn't exist"
+        flash[:alert] = "Stock code doesn't exist."
       end
     end
   end
