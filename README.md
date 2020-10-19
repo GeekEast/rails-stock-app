@@ -99,6 +99,32 @@ class Application < Rails::Application
 end
 ```
 
+
+## Ruby Bricks
+### Inspect
+- debugger
+- [Docs](https://www.rubyguides.com/2018/12/ruby-inspect-method/)
+```ruby
+stock = StockQuote::Stock.quote("fb")
+stock.inspect
+```
+
+### Nil or?
+```ruby
+a = nil
+b = []
+c = ""
+
+a.blank? #=> true
+b.blank? #=> true
+c.blank? #=> true
+
+d = "1"
+e = ["1"]
+
+d.blank? #=> false
+e.blank? #=> false
+```
 ## Rails Bricks
 ### Rails Routes
 ```ruby
@@ -147,22 +173,12 @@ about_path # just append _path
 ```
 
 
-## Extensions
+## VScode Extensions
 - ERB-VSCode-Snippets
-  - `pe`, `pc`
+  - `pe`, `pc`, `pre`
 
-## Fix
-### Postgres
-```sh
-brew uninstall postgresql
-brew doctor
-brew cleanup
-rm -r /usr/local/var/postgres
-rm -r /Users/<username>/Library/Application\ Support/Postgres
-brew install postgresql
-brew services start postgresql
-```
-
+## GEM: Stock-Quote
+- api_key: `pk_0313c10270d2436cafc50b6b5e341181`
 
 
 ## Reference

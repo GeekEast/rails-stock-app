@@ -38,7 +38,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'bootstrap', '~> 4.5', '>= 4.5.2'
 gem 'jquery-rails'
-
+gem "stock_quote", '~> 3.0.0'
 
 
 group :development, :test do
