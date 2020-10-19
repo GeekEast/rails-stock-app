@@ -176,10 +176,13 @@ about_path # just append _path
 ## VScode Extensions
 - ERB-VSCode-Snippets
   - `pe`, `pc`, `pre`
-
+- Bootstrap v4 Snippets
+  - configre shortcut
+  - change language mode `cmd + '`
+  - example: `b-form-group`
+- ERB Formatter/Beautify
 ## GEM: Stock-Quote
 - api_key: `pk_0313c10270d2436cafc50b6b5e341181`
-
 
 ## Reference
 - [Integrate Tailwind into Ruby on Rails](https://web-crunch.com/posts/how-to-install-tailwind-css-using-ruby-on-rails)
