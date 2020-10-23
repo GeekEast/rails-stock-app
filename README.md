@@ -180,6 +180,7 @@ about_path # just append _path
   - configre shortcut
   - change language mode `cmd + '`
   - example: `b-form-group`
+  - or copy `~/.vscode/extensions/zaczero.bootstrap-v4-snippets-1.1.3.snippets` to `erb.json` (configure user snippets in vscode)
 - ERB Formatter/Beautify
 ## GEM: Stock-Quote
 - api_key: `pk_0313c10270d2436cafc50b6b5e341181`
