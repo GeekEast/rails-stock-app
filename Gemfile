@@ -17,6 +17,8 @@ gem 'jquery-rails'
 gem "stock_quote", '~> 3.0.0'
 gem 'devise', '~> 4.6', '>= 4.6.2'
 
+gem 'webpacker', '~> 5.x'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

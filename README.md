@@ -35,8 +35,8 @@ port: 5432
 
 <p align="center"><img style="display: block; width: 600px; margin: 0 auto;" src=img/2020-10-14-11-09-34.png alt="no image found"></p>
 
-```ruby
-rails generate [model|controller|resource|scaffold] [name]
+```sh
+rails generate [modelcontroller|resource|scaffold] [name]
 rails destroy [model|controller|resource|scaffold] [name]
 ```
 ### Model
@@ -100,7 +100,7 @@ end
 ```
 
 
-## Ruby Bricks
+## Ruby
 ### Inspect
 - debugger
 - [Docs](https://www.rubyguides.com/2018/12/ruby-inspect-method/)
@@ -125,7 +125,8 @@ e = ["1"]
 d.blank? #=> false
 e.blank? #=> false
 ```
-## Rails Bricks
+
+## Rails
 ### Rails Routes
 ```ruby
 # basic syntax
@@ -173,7 +174,7 @@ about_path # just append _path
 ```
 
 
-## VScode Extensions
+## VScode
 - ERB-VSCode-Snippets
   - `pe`, `pc`, `pre`
 - Bootstrap v4 Snippets
@@ -182,8 +183,14 @@ about_path # just append _path
   - example: `b-form-group`
   - or copy `~/.vscode/extensions/zaczero.bootstrap-v4-snippets-1.1.3.snippets` to `erb.json` (configure user snippets in vscode)
 - ERB Formatter/Beautify
-## GEM: Stock-Quote
+## GEM
+### [Stock-Quote](https://github.com/tyrauber/stock_quote)
+- retrieve stock quotes from IEX
 - api_key: `pk_0313c10270d2436cafc50b6b5e341181`
+### [Devise](https://github.com/heartcombo/devise)
+- Flexible authentication solution
+
+
 
 ## Reference
 - [Integrate Tailwind into Ruby on Rails](https://web-crunch.com/posts/how-to-install-tailwind-css-using-ruby-on-rails)
