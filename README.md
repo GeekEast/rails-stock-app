@@ -1,4 +1,5 @@
 ## Ruby on Rails
+- **Convention Over Configuration**
 ### Install
 - Install rbenv `brew install rbenv`, `rbenv init`
 - Install ruby `rbenv install 2.6.3`
