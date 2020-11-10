@@ -199,3 +199,4 @@ about_path # just append _path
 - [Ruby Blocks](https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/)
 - [Better Template Engine](https://haml.info/tutorial.html)
 - [Add Bootstrap to Rails](https://github.com/twbs/bootstrap-rubygem)
+- [Rails vs Nest.js](https://stackshare.io/stackups/nestjs-vs-rails)
