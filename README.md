@@ -7,6 +7,8 @@
 - [VSCode Plugins](/docs/vscode.md)
 - [Gems](/docs/gem.md)
 - [Stylings](/docs/styles.md)
+- [Database](/docs/database.md)
+- [Database Migration](/docs/migrations.md)
 
 ## Reference
 - [Rails vs Nest.js](https://stackshare.io/stackups/nestjs-vs-rails)

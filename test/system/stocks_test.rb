@@ -15,7 +15,6 @@ class StocksTest < ApplicationSystemTestCase
     click_on "New Stock"
 
     fill_in "Ticker", with: @stock.ticker
-    fill_in "User", with: @stock.user_id
     click_on "Create Stock"
 
     assert_text "Stock was successfully created"
@@ -27,7 +26,6 @@ class StocksTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Ticker", with: @stock.ticker
-    fill_in "User", with: @stock.user_id
     click_on "Update Stock"
 
     assert_text "Stock was successfully updated"

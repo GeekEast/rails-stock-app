@@ -3,7 +3,7 @@
 - ticker: string
 - user_id: number with index
 ```sh
-rails generate scaffold Stock ticker:string user_id:integer:index
+rails generate scaffold Stock ticker:string #user_id:integer:index
 ```
 
 ## CRUD
@@ -116,6 +116,9 @@ class Employee < ApplicationRecord
   belongs_to :manager, class_name: "Employee", optional: true
 end
 ```
+
+## Issues
+- Do I need to manually create migration after modify the model?
 
 ## Reference
 - [Rails Associations](https://guides.rubyonrails.org/association_basics.html)
