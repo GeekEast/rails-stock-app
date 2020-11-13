@@ -22,6 +22,7 @@ rails generate migration AddUserRefToProducts user:references
 # generate
 class AddUserRefToProducts < ActiveRecord::Migration[5.0]
   def change
+    # create a user_id in products table
     add_reference :products, :user, foreign_key: true
   end
 end
@@ -53,3 +54,19 @@ rails generate migration AddDetailsToProducts 'price:decimal{5,2}' supplier:refe
 - null: allow null or not
 - default: default value
 - comment: add a comment on the column
+
+
+## Summary
+- `add_reference :products, :user` will add `user_id` in prodcuts table
+```ruby
+# sentence 1 = sentence 2
+create_table :accounts do |t|
+  # sentence 1
+  t.belongs_to :supplier
+  t.string :account_number
+  t.timestamps
+
+  # sentence 2
+  add_reference :accounts, :supplier
+end
+```
