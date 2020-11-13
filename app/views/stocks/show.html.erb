@@ -1,14 +1,11 @@
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>Ticker:</strong>
   <%= @stock.ticker %>
 </p>
-
 <p>
   <strong>User:</strong>
-  <%= @stock.user %>
+  <%= @stock.user.email %>
 </p>
-
 <%= link_to 'Edit', edit_stock_path(@stock) %> |
 <%= link_to 'Back', stocks_path %>

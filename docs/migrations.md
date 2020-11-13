@@ -1,3 +1,13 @@
+- [Templates](#templates)
+  - [AddColumnToTable](#addcolumntotable)
+  - [RemoveColumnFromTable](#removecolumnfromtable)
+  - [CreateTable](#createtable)
+  - [AddModelRefToModel](#addmodelreftomodel)
+  - [CreateJoinTableTable1Table2](#createjointabletable1table2)
+- [Modifiers](#modifiers)
+- [Operations](#operations)
+- [Summary](#summary)
+
 ## Templates
 ### AddColumnToTable
 ```ruby
@@ -33,13 +43,7 @@ end
 rails g migration CreateJoinTableCustomerProduct customer product
 ```
 
-## Operations
-- create table: `create_table`
-- create join table: `create_join_table`
-- change table: `change_table`
-- change column: `change_column`
-- add foreign key: `add_foreign_key`
-- remove foreign key: `remove_foreign_key`
+
 
 ## Modifiers
 ```ruby
@@ -54,6 +58,15 @@ rails generate migration AddDetailsToProducts 'price:decimal{5,2}' supplier:refe
 - null: allow null or not
 - default: default value
 - comment: add a comment on the column
+
+## Operations
+- create table: `create_table`
+- create join table: `create_join_table`
+- change table: `change_table`
+- change column: `change_column`
+- add foreign key: `add_foreign_key`
+- add reference: `add_reference`
+- remove foreign key: `remove_foreign_key`
 
 
 ## Summary
