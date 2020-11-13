@@ -59,14 +59,16 @@ rails generate migration AddDetailsToProducts 'price:decimal{5,2}' supplier:refe
 ## Summary
 - `add_reference :products, :user` will add `user_id` in prodcuts table
 ```ruby
-# sentence 1 = sentence 2
+# sentence 1 = sentence 2 = sentence 3
 create_table :accounts do |t|
   # sentence 1
   t.belongs_to :supplier
+  # sentence 2
+  t.references :user, foreign_key: true
   t.string :account_number
   t.timestamps
-
-  # sentence 2
-  add_reference :accounts, :supplier
 end
+
+# sentence 3
+add_reference :accounts, :supplier
 ```

@@ -3,7 +3,7 @@
 - ticker: string
 - user_id: number with index
 ```sh
-rails generate scaffold Stock ticker:string #user_id:integer:index
+rails generate scaffold Stock ticker:string user_id:integer:index
 ```
 
 ## CRUD
