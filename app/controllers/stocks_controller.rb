@@ -18,6 +18,7 @@ class StocksController < ApplicationController
   # GET /stocks/new
   def new
     @stock = Stock.new
+    @stock.user = current_user
   end
 
   # GET /stocks/1/edit
