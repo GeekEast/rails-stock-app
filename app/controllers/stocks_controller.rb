@@ -19,6 +19,7 @@ class StocksController < ApplicationController
   def new
     @stock = Stock.new
     @stock.user = current_user
+    p "----------"
   end
 
   # GET /stocks/1/edit
