@@ -1,15 +1,18 @@
 class StocksController < ApplicationController
   before_action :set_stock, only: [:show, :edit, :update, :destroy]
-
+  before_action :curr_user
+  
   # GET /stocks
   # GET /stocks.json
   def index
-    @stocks = Stock.all
+    @user = current_user
+    @stocks = @user.stocks if @user
   end
 
   # GET /stocks/1
   # GET /stocks/1.json
   def show
+    @stock = @user.stocks.find_by(id: params[:id])
   end
 
   # GET /stocks/new
@@ -70,5 +73,9 @@ class StocksController < ApplicationController
     # Only allow a list of trusted parameters through.
     def stock_params
       params.require(:stock).permit(:ticker, :user_id)
+    end
+
+    def curr_user
+      @user = current_user
     end
 end
