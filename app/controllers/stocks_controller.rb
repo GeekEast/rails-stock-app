@@ -18,8 +18,6 @@ class StocksController < ApplicationController
   # GET /stocks/new
   def new
     @stock = Stock.new
-    @stock.user = current_user
-    p "----------"
   end
 
   # GET /stocks/1/edit
@@ -74,7 +72,7 @@ class StocksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def stock_params
-      params.require(:stock).permit(:ticker, :user_id)
+      params.require(:stock).permit(:ticker, :user_id).with_defaults(user_id: current_user.id)
     end
 
     def curr_user
