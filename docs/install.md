@@ -1,8 +1,14 @@
 ### Install
-- Install rbenv `brew install rbenv`, `rbenv init`
-- Install ruby `rbenv install 2.6.3`
-- Install rails `gem install -v 5.2.4.1`
-
+- Install rbenv 
+  - `brew install rbenv`
+  - `rbenv init`
+- Install ruby 
+  - `rbenv install 2.6.3`
+  - `rbenv global 2.6.3`
+- Install rails 
+  - `export GEM_HOME="$HOME/.gem"`
+  - `gem install -v 5.2.3`
+  - `rbenv rehash`
 ### Database
 - Install
 ```sh
