@@ -14,6 +14,7 @@ rails g model hello
 - test
 
 ### Controller
+- not very useful
 ```ruby
 rails g controller hello
 rails g controller hello index
