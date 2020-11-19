@@ -7,7 +7,7 @@
   - `rbenv global 2.6.3`
 - Install rails 
   - `export GEM_HOME="$HOME/.gem"`
-  - `gem install -v 5.2.3`
+  - `gem install rails -v 5.2.3`
   - `rbenv rehash`
 ### Database
 - Install
