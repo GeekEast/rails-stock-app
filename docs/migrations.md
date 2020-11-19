@@ -43,6 +43,23 @@ end
 rails g migration CreateJoinTableCustomerProduct customer product
 ```
 
+## Types
+```ruby
+create_table :users do |t|
+  t.string
+  t.text
+  t.integer
+  t.float
+  t.decimal
+  t.datetime
+  t.timestamp
+  t.time
+  t.date
+  t.binary
+  t.boolean
+end
+```
+
 
 
 ## Modifiers
