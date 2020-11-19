@@ -33,7 +33,7 @@ rails generate migration AddUserRefToProducts user:references
 class AddUserRefToProducts < ActiveRecord::Migration[5.0]
   def change
     # create a user_id in products table
-    add_reference :products, :user, foreign_key: true
+    add_reference :products, :user, type: :uuid, foreign_key: true
   end
 end
 ```
