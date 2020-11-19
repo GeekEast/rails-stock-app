@@ -77,13 +77,19 @@ rails generate migration AddDetailsToProducts 'price:decimal{5,2}' supplier:refe
 - comment: add a comment on the column
 
 ## Operations
-- create table: `create_table`
-- create join table: `create_join_table`
-- change table: `change_table`
-- change column: `change_column`
-- add foreign key: `add_foreign_key`
-- add reference: `add_reference`
-- remove foreign key: `remove_foreign_key`
+- `create_table`
+- `create_join_table`
+- `change_table`
+- `add_foreign_key`
+- `add_reference`
+- `remove_foreign_key`
+- `drop_table`
+- `add_column`
+- `change_column`
+- `rename_column`
+- `remove_column`
+- `add_index`
+- `remove_index`
 
 
 ## Summary
